@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Expertise | Shiksha Adhikari, PhD</title>
+  <meta name="description" content="Explore the research streams, methodological expertise, and selected publications of Shiksha Adhikari, PhD, in sustainable food systems, nutrition, and quantitative modelling.">
+
+  <style>
+    :root {
+      --ivory: #FAF9F5;
+      --sage: #A8C256;
+      --sage-light: #EDF1E2;
+      --terracotta: #C98278;
+      --charcoal: #30352F;
+      --muted: #687064;
+      --white: #FFFFFF;
+      --border: #E4E6DC;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--charcoal);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #536B27;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      color: #30352F;
+    }
+
+    .container {
+      width: min(1080px, 88%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(250, 249, 245, 0.96);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--charcoal);
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      color: var(--charcoal);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #718C36;
+    }
+
+    .hero {
+      padding: 82px 0 68px;
+      background: linear-gradient(135deg, var(--ivory), var(--sage-light));
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      color: #657D31;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      max-width: 800px;
+      margin: 16px 0 20px;
+      font-size: clamp(38px, 5vw, 58px);
+      letter-spacing: -1.8px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 68px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+      margin: 10px 0;
+      font-size: clamp(28px, 3vw, 36px);
+      letter-spacing: -0.7px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 28px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .number {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #718C36;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .expertise-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .expertise-item {
+      padding: 20px 22px;
+      background: var(--sage-light);
+      border-radius: 10px;
+    }
+
+    .expertise-item h3 {
+      margin: 0 0 7px;
+      font-size: 17px;
+    }
+
+    .expertise-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .publication {
+      padding: 25px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .publication:first-of-type {
+      border-top: 1px solid var(--border);
+    }
+
+    .publication h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+
+    .publication p {
+      margin: 6px 0;
+      color: var(--muted);
+    }
+
+    .publication .type {
+      color: #657D31;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .outputs-box {
+      padding: 30px;
+      background: var(--sage-light);
+      border-left: 4px solid var(--sage);
+      border-radius: 8px;
+    }
+
+    .outputs-box p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 700px) {
+      .grid,
+      .expertise-list {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 58px 0 48px;
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">Shiksha Adhikari, PhD</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="#research-streams">Research Streams</a>
+        <a href="#methodology">Methods</a>
+        <a href="#publications">Publications</a>
+        <a href="#research-outputs">Other Outputs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Research & Expertise</div>
+
+        <h1>Connecting nutrition, environmental sustainability and quantitative analysis.</h1>
+
+        <p>
+          My research explores how food systems can better support nutritional
+          quality while reducing environmental pressures. I combine evidence
+          synthesis, quantitative modelling and interdisciplinary analysis to
+          understand trade-offs and generate insights that can inform research,
+          policy and practice.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="research-streams">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Research Interests</div>
+          <h2>Research Streams</h2>
+          <p>
+            My work brings together nutrition science and sustainability
+            analysis to investigate food systems from complementary perspectives.
+          </p>
+        </div>
+
+        <div class="grid">
+
+          <article class="card">
+            <span class="number">01</span>
+            <h3>Sustainable Food Systems</h3>
+            <p>
+              Analysing food system scenarios to explore how dietary choices,
+              food production and resource use influence environmental
+              sustainability and nutritional outcomes.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="number">02</span>
+            <h3>Protein Quality and Nutrition</h3>
+            <p>
+              Investigating protein quality, amino acid availability and the
+              nutritional implications of different food sources and dietary
+              patterns, including the role of protein quality in sustainable diets.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="number">03</span>
+            <h3>Integrated Nutrition and Environmental Assessment</h3>
+            <p>
+              Bringing nutritional indicators together with environmental
+              data to explore potential trade-offs between dietary quality,
+              greenhouse gas emissions and land use.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="number">04</span>
+            <h3>Evidence Synthesis and Nutrition Research</h3>
+            <p>
+              Synthesising scientific evidence on nutrition and health,
+              including systematic review methods and the interpretation
+              of findings for research and decision-making.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="methodology">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Analytical Approach</div>
+          <h2>Methodological Expertise</h2>
+          <p>
+            I use quantitative and qualitative approaches to structure
+            complex questions, assess evidence and translate analytical
+            findings into practical insights.
+          </p>
+        </div>
+
+        <div class="expertise-list">
+
+          <div class="expertise-item">
+            <h3>Quantitative Modelling and Scenario Analysis</h3>
+            <p>
+              Food system modelling, scenario development, sensitivity
+              analysis and comparison of alternative dietary and
+              sustainability pathways using R, Python and GAMS.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Nutrition and Dietary Assessment</h3>
+            <p>
+              Protein quality assessment, amino acid composition,
+              nutritional indicators and interpretation of dietary
+              and nutrition-related evidence.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Environmental Data Analysis</h3>
+            <p>
+              Integrating environmental datasets, including greenhouse
+              gas emissions and land-use indicators, into food system
+              analysis and modelling.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Systematic Reviews and Evidence Synthesis</h3>
+            <p>
+              Reviewing and synthesising scientific literature to
+              identify evidence patterns, research gaps and
+              implications for nutrition and food systems.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Data Processing and Visualisation</h3>
+            <p>
+              Data cleaning, transformation, analytical workflows,
+              reproducible research and visual communication using
+              R, Python and dashboard tools.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Interdisciplinary Research</h3>
+            <p>
+              Integrating perspectives across nutrition, environmental
+              sustainability and food systems, while collaborating
+              with researchers and stakeholders from different disciplines.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Selected Academic Work</div>
+          <h2>Selected Publications</h2>
+          <p>
+            A selection of my peer-reviewed research and doctoral work.
+            Additional publications and research outputs can be added here.
+          </p>
+        </div>
+
+        <article class="publication">
+          <div class="type">Journal Article · 2022</div>
+          <h3>
+            <a href="https://doi.org/10.3390/nu14050947" target="_blank" rel="noopener noreferrer">
+              Protein quality in perspective: A review of protein quality metrics and their applications
+            </a>
+          </h3>
+          <p>
+            Adhikari, S., Schop, M., de Boer, I. J. M., &amp; Huppertz, T.
+            <em>Nutrients, 14</em>(5), Article 947.
+          </p>
+        </article>
+
+        <article class="publication">
+          <div class="type">Journal Article · 2022</div>
+          <h3>
+            <a href="https://doi.org/10.1017/S0007114521002786" target="_blank" rel="noopener noreferrer">
+              Maternal dietary intake, nutritional status, and macronutrient composition of human breast milk: Systematic review
+            </a>
+          </h3>
+          <p>
+            Adhikari, S., Kudla, U., Nyakayiru, J., &amp; Brouwer-Brolsma, E. M.
+            <em>British Journal of Nutrition, 127</em>(12), 1796–1820.
+          </p>
+        </article>
+
+        <article class="publication">
+          <div class="type">Journal Article · 2023</div>
+          <h3>
+            <a href="https://doi.org/10.1002/sfp2.1020" target="_blank" rel="noopener noreferrer">
+              Consideration of utilizable amino acid content in the context of dietary protein quality assessment
+            </a>
+          </h3>
+          <p>
+            Adhikari, S., de Boer, I. J. M., van Hal, O., &amp; Huppertz, T.
+            <em>Sustainable Food Proteins, 1</em>(4), 164–174.
+          </p>
+        </article>
+
+        <article class="publication">
+          <div class="type">Doctoral Dissertation · 2024</div>
+          <h3>
+            <a href="https://doi.org/10.18174/677622" target="_blank" rel="noopener noreferrer">
+              Protein quality and its role in food systems
+            </a>
+          </h3>
+          <p>
+            Adhikari, S. (2024). Doctoral dissertation, Wageningen University.
+          </p>
+        </article>
+
+        <article class="publication">
+          <div class="type">Accepted / In Press · 2026</div>
+          <h3>
+            The role of protein quality in designing sustainable food systems
+          </h3>
+          <p>
+            Adhikari, S., van Hal, O., van Selm, B., Huppertz, T., &amp;
+            de Boer, I. J. M.
+          </p>
+          <p>
+            Publication details and DOI will be updated when the final
+            publication record is confirmed.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="research-outputs">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Beyond Journal Articles</div>
+          <h2>Research Outputs</h2>
+        </div>
+
+        <div class="outputs-box">
+          <p>
+            This section will be expanded with selected conference
+            contributions, presentations, research tools and other
+            scientific outputs. It will highlight work that demonstrates
+            the application of research methods and the communication
+            of findings to academic and wider audiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© Shiksha Adhikari</span>
+      <a href="index.html">Return to homepage</a>
+    </div>
+  </footer>
+
+</body>
+</html>
