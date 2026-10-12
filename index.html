@@ -184,15 +184,20 @@
     }
 
     .hero-art {
-      min-height: 370px;
+      height: 420px;
       background: #EAEEDF;
       border-radius: 48% 48% 5px 5px;
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       overflow: hidden;
-      }
+    }
+    
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center 35%;
+    }
 
     .hero-art::before {
       content: "";
@@ -610,10 +615,13 @@
           </div>
         </div>
 
-<div class="hero-art" aria-label="Decorative monogram">
-  <span class="art-initials">SA</span>
-  <span class="art-note">Science with purpose</span>
-</div>
+      <div class="hero-art">
+        <img
+          src="images/shiksha-adhikari2.jpg"
+          alt="Portrait of Shiksha Adhikari, PhD"
+          class="profile-photo"
+        >
+      </div>
 
       </div>
     </section>
