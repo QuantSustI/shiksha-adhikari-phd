@@ -26,13 +26,15 @@
       scroll-behavior: smooth;
     }
 
-    body {
-      margin: 0;
-      background: var(--ivory);
-      color: var(--charcoal);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-    }
+      body {
+        margin: 0;
+        background: var(--ivory);
+        color: var(--charcoal);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        -webkit-font-smoothing: antialiased;
+      }
 
     a {
       color: #536B27;
@@ -50,40 +52,52 @@
     }
 
     header {
-      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 249, 245, 0.94);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
-      background: rgba(250, 249, 245, 0.96);
     }
-
-    .nav {
+    
+    nav {
+      min-height: 76px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 24px;
-      flex-wrap: wrap;
     }
-
+    
     .brand {
       color: var(--charcoal);
-      font-size: 17px;
-      font-weight: 700;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -0.4px;
+      white-space: nowrap;
       text-decoration: none;
     }
-
+    
+    .brand span {
+      color: #81983E;
+    }
+    
     .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 22px;
+      gap: 25px;
+      align-items: center;
+      font-size: 13px;
+      color: var(--muted);
     }
-
+    
     .nav-links a {
-      color: var(--charcoal);
-      font-size: 14px;
+      color: var(--muted);
       text-decoration: none;
     }
-
+    
     .nav-links a:hover {
-      color: #718C36;
+      color: var(--charcoal);
     }
 
     .hero {
@@ -101,14 +115,16 @@
     }
 
     h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
       line-height: 1.25;
     }
-
+    
     h1 {
       max-width: 800px;
       margin: 16px 0 20px;
-      font-size: clamp(38px, 5vw, 58px);
-      letter-spacing: -1.8px;
+      font-size: clamp(42px, 5.5vw, 70px);
+      letter-spacing: -2px;
     }
 
     .hero p {
@@ -245,10 +261,17 @@
       flex-wrap: wrap;
     }
 
-    @media (max-width: 700px) {
-      .grid,
-      .expertise-list {
-        grid-template-columns: 1fr;
+      @media (max-width: 540px) {
+        nav {
+          padding: 16px 0;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+        }
+      
+        .nav-links {
+          gap: 8px 16px;
+        }
       }
 
       .hero {
@@ -268,19 +291,22 @@
 
 <body>
 
-  <header>
-    <div class="container nav">
-      <a class="brand" href="index.html">Shiksha Adhikari, PhD</a>
-
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="#research-streams">Research Streams</a>
-        <a href="#methodology">Methods</a>
-        <a href="#publications">Publications</a>
-        <a href="#research-outputs">Other Outputs</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+      <div class="container">
+        <nav aria-label="Main navigation">
+          <a class="brand" href="index.html">Shiksha <span>Adhikari</span></a>
+    
+          <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#expertise">Expertise</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#education">Education & Awards</a>
+            <a href="research.html">Research & Expertise</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
   <main>
 
